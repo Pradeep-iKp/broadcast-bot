@@ -22,7 +22,7 @@ else:
 
 
 # ------------------------------- Rate Message --------------------------------- #
-@Client.on_message(filters.private & filters.command('start'))
+@Client.on_message(filters.private & filters.command('rate'))
 async def start_bot(bot, m: Message):
     id = m.from_user.id
     user_name = '@' + m.from_user.username if m.from_user.username else None
