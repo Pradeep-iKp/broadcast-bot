@@ -21,7 +21,7 @@ else:
     from config import Config
 
 
-# ------------------------------- Start Message --------------------------------- #
+# ------------------------------- Rate Message --------------------------------- #
 @Client.on_message(filters.private & filters.command('start'))
 async def start_bot(bot, m: Message):
     id = m.from_user.id
